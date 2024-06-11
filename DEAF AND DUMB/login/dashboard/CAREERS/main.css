@@ -1,0 +1,302 @@
+body{
+    font-family: Arial,  sans-serif;
+     background-color: rgb(237, 239, 243);
+     margin: 0;
+     padding: 0;
+     background-size: cover;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+ 
+  .centered {
+    /* border-radius:50%; */
+    border-color: black;
+    color:whi;
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:30pt;
+    font-weight: bolder;
+    margin-top: 12%;
+  }
+
+
+  .faq1 {
+    background: linear-gradient(to bottom, #4c62f0, hsl(0, 23%, 97%));
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 15px; 
+    display: inline-block; 
+  }
+
+  .faq {
+    background-color: #ffffff; 
+    color: white; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  .container {
+    position: relative; 
+  }
+  
+  h3 {
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .popdown-btn {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: none; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  .popdown-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .container1 {
+    display: flex;
+  }
+  
+  .box {
+    flex: 1;
+    background-color: #a4f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: #000000;
+  }
+  .box h2
+  {
+    color:#4c62f0;
+  }
+  .box p
+  {
+    font-weight:bold;
+    color:#f91023;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    
+  }
+  
+  a {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+  }
+
+  .containerkp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+  }
+  
+  .load-more-btn {
+    background-color: #EB595F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .load-more-btn:hover {
+    background-color: #d44a4f; 
+  }
+  
+  .load-more-btn:focus {
+    outline: none; 
+  }
+  
+  .message-box {
+    width: 1200px;
+    padding: 20px;
+    margin-left: 100px;
+    background-color: tomato;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px; 
+  }
+  
+  .message-box p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .center-button {
+    margin-top: 20px; 
+  }
+  
+  
+  
+  #head {
+    color: white;
+  }
+
+  footer{
+    background-color: #351a1a9c;
+  }
+  
+  #a121{
+    margin-top: 20px;
+height: 500px;
+width: 1600px;
+  }
+
+
+  #popup {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    padding: 20px;
+    z-index: 9999;
+}
+
+#popup img {
+    max-width: 60%; /* Decrease the max width */
+    max-height: 60vh; /* Decrease the max height */
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999; /* Ensure the close button is above other elements */
+    color: black;
+}
+
+
+
+
+
+.containerkaran {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.popdown-btn-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 1600px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.popdown-btn-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.popdown-btn-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.container:hover .popdown-btn-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.container:hover .dropbtn {
+  background-color: #3e8e41;
+}

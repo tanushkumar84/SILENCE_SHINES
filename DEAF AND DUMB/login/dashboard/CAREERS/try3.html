@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #EB595F;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .job-description {
+            margin-bottom: 30px;
+        }
+
+        .job-description h2 {
+            color: #1E90FF;
+        }
+
+        .job-description p {
+            margin-bottom: 15px;
+        }
+
+        .requirements {
+            margin-bottom: 30px;
+        }
+
+        .requirements h3 {
+            color: #1E90FF;
+            margin-bottom: 10px;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirements li {
+            margin-bottom: 5px;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #EB595F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #EB595F;
+        }
+    </style>
+</head>
+<form action="try3.php" method="POST" enctype="multipart/form-data">
+
+<body>
+    <header>
+        <h1>Join Our Team as a Web Developer</h1>
+    </header>
+    <div class="container">
+        <div class="job-description">
+            <h2>Job Description:</h2>
+            <p>We are seeking a talented and enthusiastic Web Developer to join our dynamic team. The ideal candidate will be passionate about creating exceptional websites and web applications, with a strong focus on user experience and functionality.</p>
+            <p>You will be responsible for developing and maintaining front-end and back-end components of our web projects, collaborating with designers and other developers to bring creative ideas to life. This is an exciting opportunity to work on a variety of projects and contribute to the growth of our company.</p>
+        </div>
+        <div class="requirements">
+            <h3>Requirements:</h3>
+            <ul>
+                <li>Bachelor's degree in Computer Science or related field, or equivalent work experience.</li>
+                <li>Proficiency in HTML5, CSS3, JavaScript, and other relevant web technologies.</li>
+                <li>Experience with front-end frameworks such as React, Angular, or Vue.js.</li>
+                <li>Strong understanding of responsive design principles and mobile-first development.</li>
+                <li>Knowledge of server-side languages and frameworks such as Node.js, Express, or Django is a plus.</li>
+                <li>Experience with version control systems (e.g., Git) and package managers.</li>
+                <li>Excellent problem-solving skills and attention to detail.</li>
+                <li>Ability to work independently and in a team environment, with excellent communication skills.</li>
+                <li>Portfolio of previous work demonstrating proficiency in web development.</li>
+            </ul>
+        </div>
+        <form action="#" method="POST">
+            <h2>Apply Now:</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <label for="message">Cover Letter (optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+</body>
+</html>

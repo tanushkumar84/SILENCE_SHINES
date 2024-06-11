@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Session</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(197, 230, 244);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            padding-bottom: 20px;
+            border-bottom: 2px solid #333;
+            margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .therapist {
+            width: calc(30% - 40px);
+            margin-bottom: 40px;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .therapist:hover {
+            transform: translateY(-5px);
+        }
+        .therapist img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .therapist h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .therapist p {
+            margin: 5px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+        .therapist .description {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .therapist a {
+            color: #FFA500;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .therapist a:hover {
+            color: #FF69B4;
+        }
+        .therapist.hidden {
+            display: none;
+        }
+        #show-more-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #show-more-button button {
+            border: none;
+            background: none;
+            color: #FF69B4;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: #eb595f;">Counseling Session</h1>
+    <div class="container">
+        <!-- Initially shown therapists -->
+        <div class="therapist">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg" alt="Therapist 1">
+            <h2>Dr. John Doe</h2>
+            <p class="description">Experienced psychologist specializing in anxiety disorders and stress management.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <!-- Add more therapists as needed -->
+        <div class="therapist">
+            <img src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg" alt="Therapist 2">
+            <h2>Dr. Jane Smith</h2>
+            <p class="description">Licensed marriage and family therapist with expertise in relationship counseling.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://pbs.twimg.com/media/BcINeMVCIAABeWd.jpg" alt="Therapist 3">
+            <h2>Dr. Michael Johnson</h2>
+            <p class="description">Specialist in trauma therapy and PTSD treatment, providing a compassionate approach to healing.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg" alt="Therapist 4">
+            <h2>Dr. Emily Brown</h2>
+            <p class="description">Experienced counselor focusing on self-esteem issues and personal growth.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://i.pinimg.com/736x/12/3d/5e/123d5e17e0efbd9c3818f576cf9d5f3a.jpg" alt="Therapist 5">
+            <h2>Dr. Sarah Lee</h2>
+            <p class="description">Clinical psychologist specializing in depression management and cognitive therapy.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?cs=srgb&dl=pexels-justin-shaifer-1222271.jpg&fm=jpg" alt="Therapist 6">
+            <h2>Dr. Mark Wilson</h2>
+            <p class="description">Couples therapist with a focus on effective communication and conflict resolution.</p>
+            <p>Click <a href="#">here</a> to schedule a meeting.</p>
+        </div>
+        <!-- Initially hidden therapists -->
+        <div class="therapist hidden">
+            <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1498956140.1713450797&semt=sph" alt="Therapist 4">
+            <h2>Dr. Michael Smith</h2>
+            <p class="description">Experienced counselor focusing on self-esteem issues and personal growth.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <div class="therapist hidden">
+            <img src="https://img.freepik.com/free-photo/close-up-portrait-smiling-young-woman-looking-camera_171337-17994.jpg?w=900&t=st=1713613956~exp=1713614556~hmac=15e0e73c4a914af3328ef2168bfdcb904743715695ded0aba682de40de27d3a2" alt="Therapist 5">
+            <h2>Dr. Lisa Anderson</h2>
+            <p class="description">Clinical psychologist specializing in depression management and cognitive therapy.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+        <div class="therapist hidden">
+            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-55958-614810.jpg&fm=jpg" alt="Therapist 6">
+            <h2>Dr. David Williams</h2>
+            <p class="description">Couples therapist with a focus on effective communication and conflict resolution.</p>
+            <p>Click <a href="schedule1.html">here</a> to schedule a meeting.</p>
+        </div>
+    </div>
+
+    <!-- Show More button -->
+    <div id="show-more-button">
+        <button onclick="showMore()">Show More</button>
+    </div>
+
+    <script>
+        function showMore() {
+            // Select and show the hidden therapists
+            const hiddenTherapists = document.querySelectorAll('.therapist.hidden');
+            hiddenTherapists.forEach(therapist => {
+                therapist.classList.remove('hidden');
+            });
+            // Hide the Show More button
+            document.getElementById('show-more-button').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

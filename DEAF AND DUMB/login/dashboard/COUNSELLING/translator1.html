@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://st3.depositphotos.com/32273002/34782/i/450/depositphotos_347821161-stock-photo-abstract-simple-background-design-texture.jpg') center center fixed; /* Background image */
+            background-size: cover; /* Cover the entire viewport */
+            overflow-x: hidden; /* Hide horizontal overflow */
+            position: relative; /* Add position relative to body */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px; /* Adjust max width of the container */
+            margin: 0 auto 50px; /* Center the container horizontally and add margin at the bottom */
+        }
+        .therapist {
+            width: calc(33.33% - 20px); /* Adjust the width for three boxes in each row */
+            margin-bottom: 20px; /* Adjust the margin between rows */
+            background: linear-gradient(to bottom, rgba(255,165,0,0.8), rgba(255,140,0,0.8)), url('overlay.png'); /* Overlay with gradient */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .therapist:hover {
+            transform: translateY(-5px); /* Move the box up slightly on hover */
+        }
+        .therapist img {
+            width: 80%; /* Adjust image size */
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .therapist h2 {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif; /* Change font */
+        }
+        .therapist p {
+            margin: 5px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+        .therapist .description {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .therapist a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .therapist a:hover {
+            color: #FF69B4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #fff;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        /* Hide therapists beyond the first four initially */
+        .therapist:nth-child(n+5) {
+            display: none;
+        }
+        /* Style for the "Show More" button */
+        #show-more-button {
+            position: absolute; /* Position absolute */
+            bottom: 30px; /* 30px from the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust horizontal centering */
+            border-radius: 50%; /* Oval shape */
+            background-color: #FF69B4; /* Button background color */
+            padding: 10px 20px; /* Button padding */
+        }
+        #show-more-button button {
+            border: none;
+            background: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase; /* Uppercase text */
+            transition: transform 0.3s ease; /* Add transition for smooth effect */
+        }
+        #show-more-button button:hover {
+            transform: scale(1.1); /* Scale the button on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Translators</h1>
+    <div class="container">
+        <div class="therapist">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5o4empTvUKcKI8KhtuUDwKgsqDaSjoMfXg&s" alt="Translator 1">
+            <h2>John Doe</h2>
+            <p class="description">Professional translator specializing in legal document translation and interpretation services.</p>
+            <p>Click <a href="main22.html">here</a> to request translation services.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrP1R_TN9irHxnjL8kONTz5s0SJPzffbvgiQ&s" alt="Translator 2">
+            <h2>Jane Smith</h2>
+            <p class="description">Certified medical interpreter with expertise in healthcare terminology and medical records translation.</p>
+            <p>Click <a href="main22.html">here</a> to request translation services.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROY6iasJSWW0mWpFuA1AGnKpdb68PfXfWMg&s" alt="Translator 3">
+            <h2>Michael Johnson</h2>
+            <p class="description">Experienced technical translator specializing in software localization and IT documentation translation.</p>
+            <p>Click <a href="main22.html">here</a> to request translation services.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ABSu_wlqgta2ZIsZXDGtyl54I7JWJa_V2g&s" alt="Translator 4">
+            <h2>Emily Brown</h2>
+            <p class="description">Language specialist offering certified translations for academic transcripts and educational materials.</p>
+            <p>Click <a href="main22.html">here</a> to request translation services.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://i.pinimg.com/736x/12/3d/5e/123d5e17e0efbd9c3818f576cf9d5f3a.jpg" alt="Translator 5">
+            <h2>Sarah Lee</h2>
+            <p class="description">Multilingual translator providing localization services for marketing materials and advertising campaigns.</p>
+            <p>Click <a href="main22.html">here</a> to request translation services.</p>
+        </div>
+        <div class="therapist">
+            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?cs=srgb&dl=pexels-justin-shaifer-1222271.jpg&fm=jpg" alt="Translator 6">
+            <h2>Dr. Mark Wilson</h2>
+            <p class="description">Legal interpreter specializing in court proceedings and legal document translation for international cases.</p>
+            <p>Click <a href="#">here</a> to request translation services.</p>
+        </div>
+    </div>
+
+    <!-- "Show More" button to toggle visibility of remaining translators -->
+    <div id="show-more-button">
+        <button onclick="showMore()">Show More</button>
+    </div>
+
+    <script>
+        function showMore() {
+            var translators = document.querySelectorAll('.therapist:nth-child(n+5)');
+            translators.forEach(function(translator) {
+                translator.style.display = translator.style.display === 'none' ? 'flex' : 'none';
+            });
+            var buttonText = document.querySelector('#show-more-button button');
+            buttonText.innerText = buttonText.innerText === 'Show More' ? 'Show Less' : 'Show More';
+        }
+    </script>
+</body>
+</html>

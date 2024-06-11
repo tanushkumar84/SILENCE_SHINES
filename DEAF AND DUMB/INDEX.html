@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Genius Gateway</title>
+    <link rel="icon" type="image/x-icon" href="./logo2.jpg">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <h1>SILENCE<span>SHINES</span></h1>
+            <ul>
+
+                <li><a href="./about/index.html">About</a></li>
+            </ul>
+
+        </div>
+        
+        <img src="./1.gif" alt="" class="shake">
+        <div class="main">
+            <div class="picture">
+                <img src="./1.gif" alt="">
+            </div>
+            <div class="main__text">
+                <h1>SILENCE<span>SHINES</span></h1>
+                <p>Deaf and dumb people face a unique set of challenges in their daily lives that are often overlooked
+                    by the general public.</p>
+                <a href="./login/sign_in.php"><button class="btn">Join us 🚀</button></a>
+
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        list-style: none;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 6rem;
+        background: linear-gradient(#caecea45, #caecea45);
+        backdrop-filter: 2px;
+        box-shadow: rgb(86, 91, 95) 3px 3px 6px 0px inset,
+            rgba(155, 145, 145, 0.5) -3px -3px 6px 1px,
+            rgba(62, 62, 62, 0.5) 3px 3px 6px 1px;
+    }
+
+    h1 {
+        color: #fff;
+    }
+
+    span {
+        color: #ffcf81;
+        ;
+    }
+
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        cursor: pointer;
+    }
+
+    ul li a {
+        font-weight: bolder;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffcf81;
+        letter-spacing: 0.1em;
+        transition: 0.3s;
+    }
+
+    ul li:hover {
+        color: #fff;
+    }
+
+
+
+   
+    .header {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: url(./moon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(0.8);
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 0 6rem;
+    }
+
+    .main .picture {
+        position: absolute;
+        width: 500px;
+        height: auto;
+        /* top: 18%; */
+        left: -100%;
+        animation: picture 3s forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes picture {
+        0% {
+            /* top: 18%; */
+            left: -100%;
+            opacity: 1;
+        }
+
+        99% {
+            /* top: 20%; */
+            left: 5%;
+            opacity: 1;
+        }
+
+        100% {
+            top: 1%;
+            left: 5%;
+            opacity: 0;
+        }
+    }
+
+    .shake {
+        position: absolute;
+        width: 500px;
+        height: auto;
+        top: 18%;
+        left: 8%;
+        animation: shake 1.5s ease infinite;
+        opacity: 0;
+        animation-delay: 3.99s;
+    }
+
+    @keyframes shake {
+        0% {
+            top: 1%;
+            left: 5%;
+            opacity: 1;
+        }
+
+        50% {
+            top: 2%;
+            left: 5%;
+            opacity: 1;
+        }
+
+        100% {
+            top: 1%;
+            left: 5%;
+            opacity: 1;
+        }
+
+    }
+
+    .main .main__text {
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        width: 50%;
+        color: aliceblue;
+        opacity: 0;
+        animation: text 3s forwards;
+        background: linear-gradient(#caecea14, #caecea14);
+        box-shadow: rgb(86, 91, 95) 3px 3px 6px 0px,
+            rgba(155, 145, 145, 0.5) -3px -3px 6px 1px,
+            rgba(62, 62, 62, 0.5) 3px 3px 6px 1px;
+        padding: 3rem;
+        border-radius: 25px;
+    }
+
+    .main .main__text h1 {
+        font-size: 70px;
+        margin-bottom: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-shadow: -1px -2px 1px rgba(140, 140, 140, 1);
+    }
+
+    .main .main__text p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 4rem;
+        border-radius: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #ffcf81;
+        color: #ffcf81;
+        background: transparent;
+        transition: 0.4s;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+
+    .btn:hover {
+        background: #ffcf81;
+        color: #000;
+    }
+
+    @keyframes text {
+        0% {
+            top: 90%;
+            right: 5%;
+            opacity: 1;
+        }
+
+        100% {
+            top: 30%;
+            right: 5%;
+            opacity: 1;
+        }
+    }
+</style>
+
+</html>

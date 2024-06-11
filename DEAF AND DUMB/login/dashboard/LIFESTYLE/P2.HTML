@@ -1,0 +1,200 @@
+<html>
+<head>
+    <title>Lifestyle Enhancement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            margin: 0;
+            padding: 0;
+            background-image: url('3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgb(39, 187, 246);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #7309f4;
+            font-weight: bolder;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .A {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #ff1aba;
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .A img {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .habit-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .habit {
+            width: 300px;
+            background-color: #fda6a6;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .habit h1 {
+            color: #030f03;
+            font-weight: bolder;
+        }
+
+        .habit p {
+            color: #0d0df2;
+            font-weight: 600;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .video {
+            width: 45%;
+            margin: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video h3 {
+            color: #7309f4;
+            margin-bottom: 10px;
+        }
+
+        .video p {
+            color: #333;
+        }
+
+        .c {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0px;
+            border-radius: 10px;
+        }
+
+        #end-video {
+            display: none;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>LIFESTYLE HEALTHY HABITS FOR DEAF AND DUMB</h1>
+        <div class="A">
+            <h2>100% EVIDENCE BASED HEALTH TIPS</h2>
+            <img src="2.JPG" width="50" alt="Health Tips Icon">
+        </div>
+    </div>
+
+    <div class="habit-container">
+        <div class="habit">
+            <h2>Visualize Your Routine</h2>
+            <p>Use visual schedules or calendars to plan your day. This helps in organizing tasks and managing time
+                effectively.</p>
+        </div>
+        <div class="habit">
+            <h2>Stay Active</h2>
+            <p>Engage in physical activities like walking, swimming, or yoga to maintain good health and reduce stress.
+            </p>
+        </div>
+        <div class="habit">
+            <h2>Healthy Eating</h2>
+            <p>Choose nutritious foods like fruits, vegetables, and whole grains. Avoid sugary and processed foods for
+                better overall health.</p>
+        </div>
+        <div class="habit">
+            <h2>Practice Sign Language</h2>
+            <p>Regularly practice sign language to improve communication skills and connect with the deaf community.</p>
+        </div>
+        <div class="habit">
+            <h2>Protect Your Hearing</h2>
+            <p>Avoid exposure to loud noises and use ear protection when necessary to prevent hearing loss.</p>
+        </div>
+        <div class="habit">
+            <h2>Mental Well-being</h2>
+            <p>Take time for relaxation and self-care activities like meditation or hobbies to promote mental health.
+            </p>
+        </div>
+    </div>
+    <br> <br>
+    <div class="container">
+        <h2>Fitness and Lifestyle Enhancement Videos in Sign Language</h2>
+    </div>
+
+    <div class="video-container">
+        <div class="video">
+            <h3>Full Body Workout</h3>
+            <p>Join our certified fitness instructor in this full-body workout routine designed for all fitness levels.
+            </p>
+            <div class="c" id="end-video1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NVs6UWaTZG4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video">
+            <h3>Healthy Cooking Tips</h3>
+            <p>Learn how to prepare delicious and nutritious meals with our cooking expert, all in sign language.
+            </p>
+            <div class="c" id="end-video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gysfIwSWNps" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var endVideo1 = document.getElementById('end-video1');
+            var endVideo2 = document.getElementById('end-video2');
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                endVideo1.style.display = 'block';
+                endVideo1.scrollIntoView({ behavior: 'smooth' });
+                endVideo2.style.display = 'block';
+                endVideo2.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
